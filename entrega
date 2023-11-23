@@ -1,0 +1,1 @@
+A recuperação consiste em replicar a tela requisitada usando HTML, CSS e JavaScript. Além do design, devem existir algumas validações básicas: titulo deve ser obrigatório e a data/hora de entrega não podem ser no passado (sendo a entrega mínima daqui a uma hora).
