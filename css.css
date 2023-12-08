@@ -1,0 +1,145 @@
+:root{
+    --roxo: #6e53d3;
+    --branco: #fff;
+    --cinza: #f5f5f5;
+}
+
+input, textarea, select:hover{
+ 
+    outline: none;
+}
+
+button:hover{
+    background-color: var(--cinza);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', 'Segoe UI Web (West European)';
+}
+
+body{
+    background-color: var(--branco);
+}
+
+input, textarea, select{
+    background-color: var(--cinza);
+    padding: 8px;
+    border: 0;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+h5{
+    font-style: italic;
+    color: #969696;
+    font-weight: 300;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 12, 1fr;
+    gap: 20px;
+}
+
+.instruction-task{
+    grid-area: 2 / 3;
+}
+
+.info-task{
+    grid-area: 2 / 4;
+    display: flex;
+    flex-direction: column;
+}
+
+#instruction{
+    width: 800px;
+    height: 300px;
+    margin-left: 42px;
+}
+
+#title{
+    width: 800px;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+    padding: 20px;
+}
+
+li, a{
+    color: var(--roxo);
+    font-weight: 600;
+}
+
+h3{
+    font-weight: 100;
+}
+
+.nav-top p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-top select{
+    background-color: var(--branco);
+    margin: 5px;
+}
+
+p{
+    margin: 10px;
+
+}
+
+div{
+    display: block;
+}
+
+#invalid {
+    display: none;
+    color: crimson;
+}
+
+.nav-bottom{
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    border-top: 1px solid #c7c7c7;
+    align-items: baseline;
+    gap: 10px;
+    padding: 20px;
+}
+
+.nav-top{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    border-bottom: 1px solid #c7c7c7;
+    align-items: baseline;
+    margin: 10px;
+}
+
+.instruction-task, .info-task{
+    margin-top: 70px;
+}
+
+button{
+    background-color: var(--branco);
+    padding: 5px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 5px;
+    border: 1px solid #969696;
+    margin: 5px;    
+    font-weight: 700;
+}
+
+input{
+    width: 75%;
+}

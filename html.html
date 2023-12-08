@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    
+    <title>Task Schedule</title>
+</head>
+<body>
+        <form class="container-grid" action="enviado.html">
+            <div class="nav-top">
+
+                <p>New assignment</p>
+                <h3>|</h3>
+
+                <select id="">
+                    <option value="">Add to calendars: None</option>
+                </select>
+
+                <select id="">
+                    <option value="">Post notifications to: General</option>
+                </select>
+
+                <select id="">
+                    <option value="">Late turn in notifications: Off</option>
+                </select>
+            </div>
+            <div class="instruction-task">
+                
+                <label for="title"><img src="assets/lapis.png" alt=""></label>
+                <input type="text" id="title" name="title" placeholder="Enter title (required)" required>
+
+                <textarea type="text" id="instruction" name="instruction" placeholder="Enter instructions"></textarea>
+
+                <ul>
+                    <img src="assets/clip.png" alt=""><li>Attach</li>
+                    <img src="assets/add.png" alt=""><li>New</li>
+                    <img src="assets/dashboard.png" alt=""><li>Apps</li>
+                    <img src="assets/airport-plane.png" alt=""><li>Learning Accelerators</li>
+                </ul>
+            </div>
+
+            <div class="info-task">
+                <div>
+                    <label for="date"><img src="assets/calendar.png" alt=""></label>
+                    <input type="date" id="date" required>
+                </div>
+                
+                <div>
+                    <label for="time"><img src="" alt=""><img src="assets/relogio.png" alt=""></label>
+                    <input type="time" id="time" required>
+                </div>
+                <p id="invalid">The date and time have to be set to at least one hour from now</p>
+                
+                <p>Assignment will post immediately with late turn-ins allowed. <a href="">Edit assignment timeline.</a> </p>
+
+                <div>
+                    <img src="assets/selecionar-turma.png" alt="">
+                    <select id="">
+                        <option value="">2022.2510001 - PROGRAMADOR DE SISTEMAS</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <img src="assets/user.png" alt="">
+                    <select id="">
+                        <option value="">All current students</option>
+                    </select>
+                </div>
+                
+                <a href=""><img src="assets/rubric.png" alt="">Add rubric</a>
+
+                <div>
+                    <label for="no-points"><img src="assets/estrela.png" alt=""></label>
+                    <input type="text" id="no-points" placeholder="No points">    
+                </div>
+                
+                <a href=""><img src="assets/tag.png" alt="">Add tag</a>
+
+            </div>
+            
+            <div class="nav-bottom">
+                <a href=""><img src="assets/olho-fechado.png" alt="">       Student View</a>
+
+                    <h5>Saved: Nov 23, 9:47 AM</h5>
+                    <button type="button" id="discard">Discard</button>
+                    <button type="button" id="save-as-draft">Save as Draft</button>
+                    <button type="submit" id="assign" onclick="validateTime(event); validateTask()">Assign</button>
+                
+            </div>
+        <div>
+
+        </div>
+
+        </form>
+        
+        <script src="javascript.js"></script>
+
+    
+</body>
+</html>
